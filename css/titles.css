@@ -1,0 +1,163 @@
+.title {
+    position: absolute;            
+    top: 3.5rem;            
+    left: 2rem; 
+    right: 2rem;           
+    width: 6rem;                    
+    text-align: center; 
+    z-index: 5;
+}
+
+.title img{
+    height: auto;
+    width: 4.75rem;
+    z-index: 5;
+}
+
+.slogan {
+	width: 6rem;
+	margin-top: 0.3rem;
+	font-size: 50%;
+	position: relative;
+	z-index: 5;
+}
+
+.slogan img{
+	width: 100%;
+	z-index: 5;
+}
+
+.layer1 {
+	position: absolute;
+	z-index: 3;
+	width: 7rem;
+	height: 7rem;
+	left: 1.5rem;
+	top: 2.9rem;
+	animation: rotate 60s linear 0s infinite;
+}
+
+.layer1 img{
+	height: auto;
+	width: 7rem;
+}
+
+.layer2 {
+	position: absolute;
+	z-index: 2;
+	width: 9.9rem;
+	height: 9.9rem;
+	left: 0.05rem;
+	top: 1.45rem;
+	overflow: hidden;
+}
+
+.layer2 img{
+	height: auto;
+	width: 9.9rem;
+	animation: neg_rotate 120s linear 0s infinite;
+}
+
+.layer3 {
+	position: absolute;
+	z-index: 1;
+	width: 10rem;
+	height: 13rem;
+	left: 0rem;
+	top: 0rem;
+	overflow: hidden;
+	/*border-style: solid;*/
+}
+
+.layer3 img{
+	position: absolute;
+	height: auto;
+	width: 10rem;
+	left: 0rem;
+	top: 0rem;
+}
+
+.music {
+	position: absolute;
+	z-index: 5;
+	width: 0.8rem;
+	height: 0.8rem;
+	left: 8.9rem;
+	top: 0.1rem;
+}
+
+.music img{
+	height: auto;
+	width: 0.8rem;
+	animation: rotate 5s linear 0s infinite;
+}
+
+
+.start {
+	position: absolute;
+	left:1rem;
+	top:9rem;
+	width: 8rem;
+	height: 8rem;
+	margin-top: 1rem;
+	font-size: 50%;
+}
+
+.start_bt {
+	position: absolute;
+	left:2.95rem;
+	top: 1.45rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	margin-top: 1.45rem;
+	z-index: 5;
+	text-align: center; 
+	color:#fff;
+
+}
+
+.start_bt img{
+    height: auto;
+    width: 2.1rem;
+}
+
+
+.start_bg img{
+    height: auto;
+    width: 8rem;
+    z-index: 4;
+    animation-name: zoom;
+    animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes zoom {
+		0% {
+				  transform: scale(1, 1);
+		}
+		50% {
+				  transform: scale(1.2, 1.2);
+		}
+		100% {
+				  transform: scale(1, 1);
+		}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes neg_rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
